@@ -30,7 +30,7 @@ class GeminiService {
             } catch (err) {
                 const status = err.response ? err.response.status : null;
                 if (status === 429 || status === 503) {
-                    logger.warn(`Gemini API Limit hit. Retrying in 15s... (Attempt ${attempt}/3)`);
+                    logger.warn(`Gemini API Limit hit. Retrying in 15s... (Attempt ${attempt})`);
                     await new Promise(res => setTimeout(res, 15000));
                 } else {
                     throw err;
