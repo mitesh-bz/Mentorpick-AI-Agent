@@ -12,6 +12,8 @@ A highly scalable, real-time autonomous AI mentor built for the Mentorpick NodeB
 
 To run the application locally for testing:
 
+Create .env file with required fields mentioned in .env.example
+
 ```bash
 npm install
 npm run dev
